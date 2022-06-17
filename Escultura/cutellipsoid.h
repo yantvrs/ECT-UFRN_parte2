@@ -1,0 +1,4 @@
+#ifndef CUTELLIPSOID_H
+#define CUTELLIPSOID_H
+
+#endif // CUTELLIPSOID_H

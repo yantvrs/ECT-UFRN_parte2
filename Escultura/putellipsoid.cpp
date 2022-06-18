@@ -21,6 +21,7 @@ PutEllipsoid::~PutEllipsoid(){
 
 void PutEllipsoid::draw(Sculptor &fout){
     float elipsoid;
+    fout.setColor(r, g, b, a);
       for(int i = xcenter - rx; i < xcenter + rx; i++){
           for(int j = ycenter - ry; j < ycenter + ry; j++){
               for(int k = zcenter - rz; k < zcenter + rz; k++){

@@ -17,18 +17,22 @@ int main()
     Interpretador parser;
     vector<FiguraGeometrica*> figuras;
 
-    figuras = parser.parse("teste.txt");
+    figuras = parser.parse("C:/Users/yanta/ECT-UFRN_parte2/escultura/teste.txt");
 
     nave = new Sculptor(parser.getDx(), parser.getDy(), parser.getDz());
 
     for(size_t i = 0; i < figuras.size(); i++){
+
         figuras[i] -> draw(*nave);
+
     }
 
-    nave -> writeOFF((char*)"teste.off");
+    nave -> writeOFF((char*)"C:/Users/yanta/ECT-UFRN_parte2/teste.off");
 
     for(size_t i = 0; i < figuras.size(); i++){
+
         delete figuras[i];
+
     }
 
     delete nave;

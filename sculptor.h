@@ -48,11 +48,6 @@ public:
    * @param z posição em z
    */
   void cutVoxel(int x, int y, int z);
-
-  /**
-   * @brief writeOFF Escreve em um arquivo padrão OFF
-   * @param filename Nome do arquivo
-   */
   void writeOFF(char* filename);
 };
 

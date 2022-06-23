@@ -13,16 +13,15 @@ PutBox::PutBox(int _x0, int _x1, int _y0, int _y1, int _z0, int _z1, float _r, f
     a  = _a;
 }
 
-PutBox::~PutBox(){
 
-}
 
-void PutBox::draw(Sculptor &t){
+void PutBox::draw(Sculptor &t)
+{
     t.setColor(r, g, b, a);
-    for(int x=x0; x<=x1; x++){
-        for(int y=y0; y<=y1; y++){
-            for(int z=z0; z<=z1; z++){
-                t.putVoxel(x,y,z);
+    for(int x= x0; x <= x1; x++){
+        for(int y= y0; y <= y1; y++){
+            for(int z= z0; z <= z1; z++){
+                t.putVoxel( x, y, z);
             }
         }
     }

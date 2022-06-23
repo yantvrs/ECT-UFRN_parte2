@@ -21,11 +21,8 @@ void CutEllipsoid::draw(Sculptor &t){
                 float t1 = ((float)(x-xcenter)/(float)rx)*((float)(x-xcenter)/(float)rx);
                 float t2 = ((float)(y-ycenter)/(float)ry)*((float)(y-ycenter)/(float)ry);
                 float t3 = ((float)(z-zcenter)/(float)rz)*((float)(z-zcenter)/(float)rz);
-    //                cout << t1 << " = " << x << " - "  << xcenter << " / " << rx <<  endl;
-
-                if(t1+t2+t3<=1.0){
+                if(t1 + t2 + t3<=1.0){
                     t.cutVoxel(x,y,z);
-    //                    cout << t1 << " " << t2 << " "  << t3 << endl;
                 }
             }
         }

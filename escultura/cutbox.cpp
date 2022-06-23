@@ -12,6 +12,7 @@ CutBox::CutBox(int _x0, int _x1, int _y0, int _y1, int _z0, int _z1){
 
 
 void CutBox::draw(Sculptor &t){
+
     for(int x= x0; x<=x1; x++){
         for(int y= y0; y<=y1; y++){
             for(int z= z0; z<= z1; z++){
@@ -19,4 +20,5 @@ void CutBox::draw(Sculptor &t){
             }
         }
     }
+
 }

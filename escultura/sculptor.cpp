@@ -7,7 +7,7 @@
 using namespace std;
 
 Sculptor::Sculptor(int _nx, int _ny, int _nz){
-//    cout << "construtor" << endl;
+
     nx = _nx;
     ny = _ny;
     nz = _nz;
@@ -32,7 +32,7 @@ Sculptor::Sculptor(int _nx, int _ny, int _nz){
 }
 
 Sculptor::~Sculptor(){
-//    cout << "destrutor" << endl;
+
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             delete[] v[i][j];
@@ -66,31 +66,14 @@ void Sculptor::cutVoxel(int x, int y, int z){
 
 void Sculptor::writeOFF(char *filename){
     int total;
-
     std::ofstream f;
     total = 0;
-
-//    for(int i=1; i<nx-1; i++){
-//        for(int j=1; j<ny-1; j++){
-//            for(int k=1; k<nz-1; k++){
-//                if(v[i+1][j][k].isOn==true && v[i-1][j][k].isOn==true)
-//                    v[i][j][k].isOn=false;
-//                if(v[i][j+1][k].isOn==true && v[i][j-1][k].isOn==true)
-//                    v[i][j][k].isOn=false;
-//                if(v[i][j][k+1].isOn==true && v[i][j][k-1].isOn==true)
-//                    v[i][j][k].isOn=false;
-//            }
-//        }
-//    }
-
     f.open(filename);
     if(!f.is_open()){
         std::cout << "deu errado\n";
         exit(0);
     }
-
     f << "OFF\n";
-
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
@@ -100,11 +83,8 @@ void Sculptor::writeOFF(char *filename){
             }
         }
     }
-
     cout << total << endl;
-
     f << total*8 << " " << total*6 << " 0\n";
-
     for(int x=0; x<nx; x++){
         for(int y=0; y<ny; y++){
             for(int z=0; z<nz; z++){
@@ -121,9 +101,7 @@ void Sculptor::writeOFF(char *filename){
             }
         }
     }
-
     int counter = 0;
-
     for(int x=0; x<nx; x++){
         for(int y=0; y<ny; y++){
             for(int z=0; z<nz; z++){
@@ -145,7 +123,5 @@ void Sculptor::writeOFF(char *filename){
             }
         }
     }
-
     f.close();
-
 }

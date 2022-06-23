@@ -28,7 +28,7 @@ vector<FiguraGeometrica*> Interpretador:: parse(string filename)
     fin.open(filename.c_str());
 
     if(!fin.is_open()){
-        cout << "O arquivo " << filename << " não abriu com sucesso!" << endl;
+        cout << "ERRO" << endl;
         exit(0);
     }
 
@@ -94,11 +94,14 @@ vector<FiguraGeometrica*> Interpretador:: parse(string filename)
 int Interpretador::getDx()
 {
     return dx;
+
 }
 
 int Interpretador::getDy()
 {
+
     return dy;
+
 }
 
 int Interpretador::getDz()

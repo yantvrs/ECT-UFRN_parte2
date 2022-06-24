@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['b_0',['b',['../class_cut_box.html#ad8fa3a568cc063ba1362f0565f530753',1,'CutBox::b()'],['../class_cut_ellipsoid.html#a59861b145d55f52dd790bd819200e009',1,'CutEllipsoid::b()'],['../class_cut_sphere.html#a4caf9c15c1c5f9818b991acdde79e1ff',1,'CutSphere::b()'],['../class_cut_voxel.html#a36eba70545bf0e368af5e561d6cfafa2',1,'CutVoxel::b()'],['../class_put_box.html#addcb6a5ba81ee1a9b58a4d6a431248f0',1,'PutBox::b()'],['../class_put_ellipsoid.html#adfbc6f752055ea68b0301411650206f0',1,'PutEllipsoid::b()'],['../class_put_sphere.html#a4c7c1a0757682ff69e5075e58b5892f2',1,'PutSphere::b()'],['../class_put_voxel.html#acc68157667afefff5b26acf96ccf53d0',1,'PutVoxel::b()'],['../struct_voxel.html#a5cd8432b1d7d0fd8b79e0fc7d10373a8',1,'Voxel::b()'],['../class_sculptor.html#a7aafd7305ea634252d8288b60536cd96',1,'Sculptor::b()']]]
+];

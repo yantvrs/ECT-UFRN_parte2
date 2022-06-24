@@ -1,6 +1,7 @@
 #include "putvoxel.h"
-
+//Construtor
 PutVoxel::PutVoxel(int _x, int _y, int _z, float _r, float _g, float _b, float _a){
+
     x = _x;
     y = _y;
     z = _z;
@@ -8,11 +9,10 @@ PutVoxel::PutVoxel(int _x, int _y, int _z, float _r, float _g, float _b, float _
     g = _g;
     b = _b;
     a = _a;
-}
-
-PutVoxel::~PutVoxel(){
 
 }
+//Destrutor
+PutVoxel::~PutVoxel(){}
 
 void PutVoxel::draw(Sculptor &t){
     t.setColor(r, g, b, a);

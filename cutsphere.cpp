@@ -11,9 +11,7 @@ CutSphere::CutSphere(int _xcenter, int _ycenter, int _zcenter, int _radius, floa
     a       = _a;
 }
 
-CutSphere::~CutSphere(){
-
-}
+CutSphere::~CutSphere(){}
 
 void CutSphere::draw(Sculptor &t){
     for(int x=(xcenter-radius); x<(xcenter+radius); x++){

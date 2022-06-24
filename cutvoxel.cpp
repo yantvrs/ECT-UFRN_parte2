@@ -10,9 +10,7 @@ CutVoxel::CutVoxel(int _x, int _y, int _z, float _r, float _g, float _b, float _
     a = _a;
 }
 
-CutVoxel::~CutVoxel(){
-
-}
+CutVoxel::~CutVoxel(){}
 
 void CutVoxel::draw(Sculptor &t){
     t.cutVoxel(x, y, z);

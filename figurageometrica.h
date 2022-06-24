@@ -6,8 +6,11 @@
 class FiguraGeometrica
 {
 public:
+
     FiguraGeometrica();
-    virtual void draw(Sculptor &t)=0;
+
+    virtual void draw(Sculptor &t) = 0;
+
     virtual ~FiguraGeometrica();
 };
 

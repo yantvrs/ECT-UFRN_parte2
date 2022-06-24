@@ -11,19 +11,19 @@ CutBox::CutBox(int _x0, int _x1, int _y0, int _y1, int _z0, int _z1, float _r, f
     g  = _g;
     b  = _b;
     a  = _a;
-}
-
-CutBox::~CutBox(){
 
 }
+
+CutBox::~CutBox(){}
 
 void CutBox::draw(Sculptor &t){
     t.setColor(r, g, b, a);
-    for(int x=x0; x<=x1; x++){
-        for(int y=y0; y<=y1; y++){
-            for(int z=z0; z<=z1; z++){
-                t.cutVoxel(x,y,z);
+    //Atribuição dos intervalos nos voxels
+        for( int i = x0; i < x1; i++){
+            for( int j = y0; j < y1; j++){
+                for( int k = z0; k < z1; k++){
+                    t.cutVoxel(i,j,k);
+                }
             }
         }
-    }
 }
